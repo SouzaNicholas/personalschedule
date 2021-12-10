@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android
+    ="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/starLogin_page"
+    >
+
+     <!-- Linkin the fragments -->
+    <fragment
+        android:id="@+id/starLogin_page"
+        android:name="com.example.personalschedule.LoginFragment"
+        android:label ="Login"
+        tools:layout ="@layout/fragment_login">
+
+        <!-- actions are the destinations inside navigation
+
+        Destination action ID to first Window ID -->
+
+        <action
+            android:id ="@+id/login_id_action"
+            app:destination="@id/starLogin">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id ="@+id/starLogin"
+        android:name="com.example.personalschedule.SignFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign"/>
+
+    <action
+        android:id ="@+id/signUp_id_action"
+        app:destination="@id/startSign">
+
+    </action>
+    <fragment
+        android:id="@+id/startSign"
+        android:name="com.example.personalschedule.FirstNameFragment"
+        android:label="First Name Schedule"
+        tools:layout="@layout/fragment_first_name"/>
+
+    <fragment
+        android:id="@+id/New_event_page"
+        android:name="com.example.personalschedule.NewEventFragment"
+        android:label="New Event"
+        tools:layout="@layout/fragment_new_event"/>
+
+
+
+
+
+</navigation>

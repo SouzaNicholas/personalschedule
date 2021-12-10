@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".LoginFragment">
+    <!-- android:gravity="center"-->
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+      android:orientation="vertical"
+
+     >
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:textSize="20sp"
+        android:hint=" Enter user name"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:hint=" Enter password"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_login"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="@string/user_sign_up"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+ </LinearLayout>
+</ScrollView>

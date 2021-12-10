@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Personal Schedule</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="singup_header"> Sign Up page</string>
+    <string name="events"> %sSchedule</string>
+
+    <string name="user_name_text"> User name</string>
+    <string name="pass_word_text"> Pass Word</string>
+    <string name="user_login"> Login</string>
+    <string name="user_sign_up"> SignUp</string>
+    <string name="add_button"> Add to Schedule</string>
+    <string name="log_out"> Log Out</string>
+
+
+</resources>
